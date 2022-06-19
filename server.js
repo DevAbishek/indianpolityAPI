@@ -5,6 +5,7 @@ const cors = require('cors')
 const connectDb = require('./config/config')
 const presidentRoutes = require('./routes/presidentRoutes')
 const vicePresidentRoutes = require('./routes/vicePresidentRoutes')
+const indexRoutes = require('./routes/indexRoutes')
 
 dotenv.config();
 connectDb();
@@ -15,10 +16,7 @@ app.use(express.json())
 
 app.use('/api/presidents', presidentRoutes)
 app.use('/api/vicepresidents', vicePresidentRoutes)
-
-app.get('/', async (req, res) => {
-    res.send("<h1>Hey There</h1>")
-})
+app.use('/', indexRoutes)
 
 const PORT = process.env.PORT
 
