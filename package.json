@@ -4,13 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "devstart": "nodemon server.js",
+    "seed": "node seeder.js"
   },
-  "author": "",
+  "author": "Abishek Agarwal",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "mongoose": "^6.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   }
 }
