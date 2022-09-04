@@ -2,6 +2,7 @@ const express = require('express')
 
 
 const router = express.Router();
+const websiteName = "https://indian-polity-api.onrender.com"
 
 router
     .route('/')
@@ -53,20 +54,20 @@ router
                   <h2>Presidents Section</h2>
             
                   <h4>List all Presidents</h4>
-                  <a href="https://indianpolity-api.herokuapp.com/api/presidents/"
-                    >https://indianpolity-api.herokuapp.com/api/presidents/</a
+                  <a href="${websiteName}/api/presidents/"
+                    >${websiteName}/api/presidents/</a
                   >
             
                   <h4>List President by ID</h4>
                   ID Range: 001 - 016<br /><a
-                    href="https://indianpolity-api.herokuapp.com/api/presidents/001"
-                    >https://indianpolity-api.herokuapp.com/api/presidents/001</a
+                    href="${websiteName}/api/presidents/001"
+                    >${websiteName}/api/presidents/001</a
                   >
             
                   <h4>Search Presidents by name</h4>
                   <a
-                    href="https://indianpolity-api.herokuapp.com/api/presidents/search/kalam"
-                    >https://indianpolity-api.herokuapp.com/api/presidents/search/kalam</a
+                    href="${websiteName}/api/presidents/search/kalam"
+                    >${websiteName}/api/presidents/search/kalam</a
                   >
             
                   <br />
@@ -74,18 +75,18 @@ router
             
                   <h2>Vice Presidents Section</h2>
                   <h4>List all Vice Presidents</h4>
-                  <a href="https://indianpolity-api.herokuapp.com/api/vicePresidents/"
-                    >https://indianpolity-api.herokuapp.com/api/vicePresidents/</a
+                  <a href="${websiteName}/api/vicePresidents/"
+                    >${websiteName}/api/vicePresidents/</a
                   >
                   <h4>List Vice President by ID</h4>
                   ID Range: 1 - 13<br /><a
-                    href="https://indianpolity-api.herokuapp.com/api/vicePresidents/1"
-                    >https://indianpolity-api.herokuapp.com/api/vicePresidents/1</a
+                    href="${websiteName}/api/vicePresidents/1"
+                    >${websiteName}/api/vicePresidents/1</a
                   >
                   <h4>Search Vice Presidents by name</h4>
                   <a
-                    href="https://indianpolity-api.herokuapp.com/api/vicePresidents/search/Dr. Sarvepalli Radhakrishnan"
-                    >https://indianpolity-api.herokuapp.com/api/vicePresidents/search/Dr.
+                    href="${websiteName}/api/vicePresidents/search/Dr. Sarvepalli Radhakrishnan"
+                    >${websiteName}/api/vicePresidents/search/Dr.
                     Sarvepalli Radhakrishnan</a
                   >
                   <p>
